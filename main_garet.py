@@ -16,7 +16,11 @@ def encode(password):
     return(x)
 
 def decode(password):
-    pass
+    """
+    Mutates the password argument by iterating over every numeric character and subtracting 3 to that digit.
+    Returns the result after mutation.
+    """
+    return "".join(str(int(digit)-3) for digit in password)
 
 def main():
     
